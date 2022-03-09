@@ -55,9 +55,7 @@ public class PTTList {
 
     public void print(PrintStream ps){
         for (int j = 0; j < PTTList.size(); j++){
-            ps.print(String.format("Teacher Name: %s ", PList.get(j).getName()));
-            ps.print(String.format("Teacher Skill: %s ", PList.get(j).getSkill()));
-            ps.print(String.format("Requirement: %s ", RList.get(j).getClass()));
+            ps.print(String.format(PList.get(j).print(), RList.get(j).print()));
             ps.println();
         }
     }
